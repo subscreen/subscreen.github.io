@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Pt3</title>
+    <link rel="stylesheet" href="pt3-style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+    <header id="header">
+        <a class="logo" href="#">Subscreen</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#home">About</a></li>
+            <li><a href="#disc">Dicography</a></li>
+            <li><a href="#live">Live</a></li>
+            <li><a href="#mv">Mv</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <section class="home" id="home">
+        <div>
+            <h1>ABOUT</h1>
+            <h2>hi, Subscreen Pop and Dope Just Do My Things It's My Style</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestias laboriosam quaerat voluptas natus magni distinctio.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Iste, laudantium placeat quasi tempore dicta iusto.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Natus exercitationem beatae accusantium magnam, quaerat quidem.
+            </p>
+            <a href="index.html">Read More</a>
+        </div>
+
+        <img src="image/main.jpg" alt="main image">
+    </section>
+
+    <section class="disc" id="disc">
+        <div>
+            <h1>DISCOGRAPHY</h1>
+            <h2>Since 2020</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestias laboriosam quaerat voluptas natus magni distinctio.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Iste, laudantium placeat quasi tempore dicta iusto.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Natus exercitationem beatae accusantium magnam, quaerat quidem.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="disc-box1">
+            <img src="image/item1.jpg" alt="">
+            <img src="image/item2.jpg" alt="">
+        </div>
+        <div class="disc-box2">
+            <img src="image/item3.jpg" alt="">
+            <img src="image/album9.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="live" id="live">
+        <div>
+            <h1>LIVE</h1>
+            <h2>Block to Block, City to City</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestias laboriosam quaerat voluptas natus magni distinctio.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Iste, laudantium placeat quasi tempore dicta iusto.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Natus exercitationem beatae accusantium magnam, quaerat quidem.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="image/live1.jpg" alt="">
+    </section>
+
+    <section class="mv" id="mv">
+        <div>
+            <h1>MV</h1>
+            <h2>Video on the Subscreen</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestias laboriosam quaerat voluptas natus magni distinctio.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Iste, laudantium placeat quasi tempore dicta iusto.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Natus exercitationem beatae accusantium magnam, quaerat quidem.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="image/bg1.jpg" alt="">
+    </section>
+
+    
+    <footer>
+        <p>Copyright © Subscreen. All rights reserved. Since 2020</p>
+    </footer>
+    
+    <div class="totop">
+        <a href="#home">Δ</a>
+    </div>
+
+    <script type="text/javascript">
+        function toggle(){
+            var header = document.getElementById("header")
+            header.classList.toggle('active')
+        }
+
+        var startPos = 0,winScrollTop = 0;
+            $(window).on('scroll',function(){
+                winScrollTop = $(this).scrollTop();
+                if (winScrollTop >= startPos) {
+                    $('header').addClass('hide');
+                } else {
+                    $('header').removeClass('hide');
+                }
+                startPos = winScrollTop;
+            });
+            $('#header ul a[href]').on('click', function(event) {
+                $('.toggle').trigger('click');
+            });
+    </script>
+</body>
+</html>
