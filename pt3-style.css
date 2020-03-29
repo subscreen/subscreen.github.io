@@ -63,9 +63,9 @@ header ul li a:hover {
     display: none;
 }
 
-header.hide {
+/* header.hide {
     transform: translateY(-100%);
-}
+} */
 
 /* section */
 section {
