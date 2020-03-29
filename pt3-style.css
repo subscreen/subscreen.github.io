@@ -326,8 +326,7 @@ footer {
         top: -100%;
         left: 0;
         width: 100%;
-        /* height: calc(100vh - 80px); */
-        height: calc(100vh);
+        height: calc(100vh - 80px);
         padding: 30px 100px;
         text-align: center;
         overflow: auto;
@@ -341,8 +340,7 @@ footer {
 
     header.active ul {
         transform: translateY(0);
-/*         top: 80px; */
-        top: 50px
+        top: 80px;
         /* opacity: 1; */
     }
 
@@ -395,10 +393,14 @@ footer {
 }
 
 @media (max-width: 600px) {
-    /* header {
-        padding: 0 20px;
-    } */
-
+    header ul {
+        height: calc(100vh);
+    }
+    
+    header.active ul {
+        top: 40px;
+    }
+    
     header .logo {
         font-size: 30px;
     }
