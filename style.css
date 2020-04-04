@@ -97,7 +97,6 @@ header .sns li a:hover {
     height: 60px;
     font-size: 2em;
     transition: 0.6s;
-    opacity: 0.9;
   }
 
 .is-animation .logo {
@@ -466,8 +465,8 @@ footer p {
         margin-right: 0;
     }
     
-    section.disc .disc-box1 img,
-    section.disc .disc-box2 img {
+    section.disc .disc-box1 a,
+    section.disc .disc-box2 a {
         width: 100%;
     }
 
