@@ -17,11 +17,6 @@
             header.classList.toggle('active')
         }
 
-    
-        $('#header ul a[href]').on('click', function(event) {
-            $('.toggle').trigger('click');
-        });
-
         (function($){
             $('a[href^="#"]').click(function(event) {
                 event.preventDefault();
@@ -208,5 +203,10 @@
         <a href="#home">Δ</a>
     </div>
     
+    <script type="text/javascript">
+        $('#header ul a[href]').on('click', function(event) {
+            $('.toggle').trigger('click');
+        );}
+    </script>
 </body>
 </html>
