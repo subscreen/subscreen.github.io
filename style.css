@@ -432,7 +432,7 @@ footer p {
 }
 
 @media (max-width: 600px) {
-    header ul {
+    header .menu {
         height: 100vh;
         padding: 100px 0;
     }
