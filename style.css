@@ -305,7 +305,7 @@ footer p {
     text-align: center;
     cursor: pointer;
     background: #00ff6c;
-    /* border-radius: 50%; */
+    border-radius: 50%;
 }
 
 .totop a {
@@ -346,9 +346,9 @@ footer p {
         margin-right: 0;
     }
     
-    section.disc .disc-box1 img,
-    section.disc .disc-box2 img {
-        width: 48%;
+    section.disc .disc-box1 a,
+    section.disc .disc-box2 a {
+        width: 50%;
     }
     
     section.disc .disc-box2 {
