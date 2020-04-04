@@ -447,6 +447,10 @@ footer p {
         line-height: 60px;
     }
 
+    header .menu li {
+        margin-left: 0;
+    }
+    
     .sns {
         display: flex;
         background: #00ff6c;
