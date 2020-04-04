@@ -469,6 +469,11 @@ footer p {
     section.disc .disc-box2 a {
         width: 100%;
     }
+    
+    section.disc .disc-box1 img,
+    section.disc .disc-box2 img {
+        width: 100%;
+    }
 
     section.disc .disc-box2 {
         display: flex;
