@@ -204,9 +204,14 @@
     </div>
     
     <script type="text/javascript">
-        $('#header ul a[href]').on('click', function(event) {
-            $('.toggle').trigger('click');
-        });
+         function toggle(){
+            var header = document.getElementById("header")
+            header.classList.toggle('active')
+        }
+        
+            $('#header ul a[href]').on('click', function(event) {
+                $('.toggle').trigger('click');
+            });
     </script>
 </body>
 </html>
